@@ -30,9 +30,9 @@ Partial Class Form1
         Me.btnGenerar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.errorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.errorValidacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -63,6 +63,7 @@ Partial Class Form1
         '
         'txtTabla
         '
+        Me.txtTabla.Enabled = False
         Me.txtTabla.Location = New System.Drawing.Point(47, 147)
         Me.txtTabla.Multiline = True
         Me.txtTabla.Name = "txtTabla"
@@ -99,14 +100,15 @@ Partial Class Form1
         Me.ToolTip1.SetToolTip(Me.btnSalir, "abandona la aplicacion")
         Me.btnSalir.UseVisualStyleBackColor = True
         '
-        'ErrorProvider1
+        'errorValidacion
         '
-        Me.ErrorProvider1.ContainerControl = Me
+        Me.errorValidacion.ContainerControl = Me
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(528, 390)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnLimpiar)
@@ -119,8 +121,9 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Uso Ciclo For"
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.errorValidacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -134,5 +137,5 @@ Partial Class Form1
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents errorValidacion As ErrorProvider
 End Class
