@@ -37,14 +37,14 @@ Partial Class Form1
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtPrecio = New System.Windows.Forms.TextBox()
-        Me.txtCantidad = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.chkDescuento = New System.Windows.Forms.CheckBox()
-        Me.cmbDescuento = New System.Windows.Forms.ComboBox()
         Me.cmbISV = New System.Windows.Forms.ComboBox()
         Me.chkISV = New System.Windows.Forms.CheckBox()
+        Me.cmbDescuento = New System.Windows.Forms.ComboBox()
+        Me.chkDescuento = New System.Windows.Forms.CheckBox()
+        Me.txtCantidad = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtPrecio = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
@@ -184,58 +184,6 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Datos Requeridos"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(22, 22)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(56, 13)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "P. Unitario"
-        '
-        'txtPrecio
-        '
-        Me.txtPrecio.Location = New System.Drawing.Point(80, 19)
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(91, 20)
-        Me.txtPrecio.TabIndex = 1
-        '
-        'txtCantidad
-        '
-        Me.txtCantidad.Location = New System.Drawing.Point(80, 45)
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(91, 20)
-        Me.txtCantidad.TabIndex = 3
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(22, 48)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 13)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Cantidad"
-        '
-        'chkDescuento
-        '
-        Me.chkDescuento.AutoSize = True
-        Me.chkDescuento.Location = New System.Drawing.Point(25, 73)
-        Me.chkDescuento.Name = "chkDescuento"
-        Me.chkDescuento.Size = New System.Drawing.Size(113, 17)
-        Me.chkDescuento.TabIndex = 4
-        Me.chkDescuento.Text = "Aplicar Descuento"
-        Me.chkDescuento.UseVisualStyleBackColor = True
-        '
-        'cmbDescuento
-        '
-        Me.cmbDescuento.FormattingEnabled = True
-        Me.cmbDescuento.Items.AddRange(New Object() {"5%", "10%", "15%", "20%", "30%", "Tercera Edad"})
-        Me.cmbDescuento.Location = New System.Drawing.Point(25, 96)
-        Me.cmbDescuento.Name = "cmbDescuento"
-        Me.cmbDescuento.Size = New System.Drawing.Size(121, 21)
-        Me.cmbDescuento.TabIndex = 5
-        Me.cmbDescuento.Text = "LISTADO 6 TIPOS DE DESCUENTOS"
-        '
         'cmbISV
         '
         Me.cmbISV.FormattingEnabled = True
@@ -256,11 +204,64 @@ Partial Class Form1
         Me.chkISV.Text = "Aplicar ISV"
         Me.chkISV.UseVisualStyleBackColor = True
         '
+        'cmbDescuento
+        '
+        Me.cmbDescuento.FormattingEnabled = True
+        Me.cmbDescuento.Items.AddRange(New Object() {"5%", "10%", "15%", "20%", "30%", "Tercera Edad"})
+        Me.cmbDescuento.Location = New System.Drawing.Point(25, 96)
+        Me.cmbDescuento.Name = "cmbDescuento"
+        Me.cmbDescuento.Size = New System.Drawing.Size(121, 21)
+        Me.cmbDescuento.TabIndex = 5
+        Me.cmbDescuento.Text = "LISTADO 6 TIPOS DE DESCUENTOS"
+        '
+        'chkDescuento
+        '
+        Me.chkDescuento.AutoSize = True
+        Me.chkDescuento.Location = New System.Drawing.Point(25, 73)
+        Me.chkDescuento.Name = "chkDescuento"
+        Me.chkDescuento.Size = New System.Drawing.Size(113, 17)
+        Me.chkDescuento.TabIndex = 4
+        Me.chkDescuento.Text = "Aplicar Descuento"
+        Me.chkDescuento.UseVisualStyleBackColor = True
+        '
+        'txtCantidad
+        '
+        Me.txtCantidad.Location = New System.Drawing.Point(80, 45)
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(91, 20)
+        Me.txtCantidad.TabIndex = 3
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(22, 48)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(49, 13)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "Cantidad"
+        '
+        'txtPrecio
+        '
+        Me.txtPrecio.Location = New System.Drawing.Point(80, 19)
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.Size = New System.Drawing.Size(91, 20)
+        Me.txtPrecio.TabIndex = 1
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(22, 22)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(56, 13)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "P. Unitario"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(706, 443)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(368, 407)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btnSalir)

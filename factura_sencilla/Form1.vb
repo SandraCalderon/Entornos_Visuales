@@ -1,9 +1,7 @@
 ﻿Public Class Form1
 
 
-    Public Class Form1
-
-        Private Sub btnCalcular_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCalcular.Click
+    Private Sub btnCalcular_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCalcular.Click
             'DECLARACION DE VARIABLES
             Dim pUnitario, cantidad As Integer
             Dim descuento, subTotal, total, ISV As Double
@@ -161,4 +159,3 @@
     End Class
 
 
-End Class
