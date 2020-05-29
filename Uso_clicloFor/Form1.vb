@@ -4,11 +4,12 @@
 
 
     Private Sub btnGenerar_Click(sender As Object, e As EventArgs) Handles btnGenerar.Click
+
+
         Dim num As Integer
         Dim x As Integer
         num = Val(txtNumero.Text)
         txtTabla.Text = ""
-
         For x = 1 To 10
             txtTabla.Text = txtTabla.Text & num & " * " & x & " = " & num * x & vbCrLf
         Next

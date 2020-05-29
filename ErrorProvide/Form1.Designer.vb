@@ -30,15 +30,16 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtCantidad = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ErrordeValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.errorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.txtDescripcion = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        CType(Me.ErrordeValidacion, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.toolTip = New System.Windows.Forms.ToolTip(Me.components)
+        CType(Me.errorValidacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnValidar
         '
-        Me.btnValidar.Location = New System.Drawing.Point(59, 328)
+        Me.btnValidar.Location = New System.Drawing.Point(169, 324)
         Me.btnValidar.Name = "btnValidar"
         Me.btnValidar.Size = New System.Drawing.Size(75, 23)
         Me.btnValidar.TabIndex = 0
@@ -58,7 +59,7 @@ Partial Class Form1
         '
         Me.txtProducto.Location = New System.Drawing.Point(127, 48)
         Me.txtProducto.Name = "txtProducto"
-        Me.txtProducto.Size = New System.Drawing.Size(100, 20)
+        Me.txtProducto.Size = New System.Drawing.Size(167, 20)
         Me.txtProducto.TabIndex = 2
         '
         'txtPrecio
@@ -93,16 +94,17 @@ Partial Class Form1
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Cantidad"
         '
-        'ErrordeValidacion
+        'errorValidacion
         '
-        Me.ErrordeValidacion.ContainerControl = Me
+        Me.errorValidacion.ContainerControl = Me
         '
-        'TextBox1
+        'txtDescripcion
         '
-        Me.TextBox1.Location = New System.Drawing.Point(127, 195)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 8
+        Me.txtDescripcion.Location = New System.Drawing.Point(127, 195)
+        Me.txtDescripcion.Multiline = True
+        Me.txtDescripcion.Name = "txtDescripcion"
+        Me.txtDescripcion.Size = New System.Drawing.Size(176, 99)
+        Me.txtDescripcion.TabIndex = 8
         '
         'Label4
         '
@@ -117,8 +119,9 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(632, 450)
-        Me.Controls.Add(Me.TextBox1)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(423, 383)
+        Me.Controls.Add(Me.txtDescripcion)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtCantidad)
         Me.Controls.Add(Me.Label3)
@@ -127,9 +130,12 @@ Partial Class Form1
         Me.Controls.Add(Me.txtProducto)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnValidar)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
-        CType(Me.ErrordeValidacion, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "ErrorProvide"
+        CType(Me.errorValidacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,7 +148,8 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents txtCantidad As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents ErrordeValidacion As ErrorProvider
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents errorValidacion As ErrorProvider
+    Friend WithEvents txtDescripcion As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents toolTip As ToolTip
 End Class
