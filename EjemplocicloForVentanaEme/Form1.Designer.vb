@@ -23,20 +23,20 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -53,6 +53,13 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingresar Valor"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(94, 40)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 1
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(13, 37)
@@ -61,13 +68,6 @@ Partial Class Form1
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Ingresar"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(94, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 1
         '
         'GroupBox2
         '
@@ -80,15 +80,6 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Opciones"
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(13, 37)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Calcular"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(94, 37)
@@ -97,6 +88,15 @@ Partial Class Form1
         Me.Button3.TabIndex = 1
         Me.Button3.Text = "Salir"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(13, 37)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Calcular"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -115,39 +115,22 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Resultado"
         '
-        'Label1
+        'ComboBox4
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(17, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(34, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Suma"
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(153, 109)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox4.TabIndex = 7
         '
-        'ComboBox1
+        'Label4
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(16, 51)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 1
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(16, 109)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(17, 85)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Multiplicación"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(154, 85)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "División"
         '
         'ComboBox3
         '
@@ -166,27 +149,45 @@ Partial Class Form1
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Resta"
         '
-        'ComboBox4
+        'ComboBox2
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(153, 109)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox4.TabIndex = 7
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(16, 109)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 3
         '
-        'Label4
+        'Label2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(154, 85)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "División"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(17, 85)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 13)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Multiplicación"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(16, 51)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(17, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(34, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Suma"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(385, 365)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
