@@ -193,6 +193,7 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EntradaTextoMessage"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
